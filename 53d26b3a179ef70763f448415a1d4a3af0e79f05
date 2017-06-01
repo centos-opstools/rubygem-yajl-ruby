@@ -19,6 +19,40 @@
     },
     {
       "key": {
+        "uuid": "9aa7fdbe_e43380f4",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 326
+      },
+      "writtenOn": "2017-06-01T21:41:45Z",
+      "side": 1,
+      "message": "`rubygem(rspec)`",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_043164ec",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 326
+      },
+      "writtenOn": "2017-06-01T21:41:45Z",
+      "side": 1,
+      "message": "get rid of the %if and %endif lines",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9aa7fdbe_c39f564f",
         "filename": "rubygem-yajl-ruby.spec",
         "patchSetId": 1
@@ -36,6 +70,24 @@
     },
     {
       "key": {
+        "uuid": "9aa7fdbe_244d8873",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 326
+      },
+      "writtenOn": "2017-06-01T21:41:45Z",
+      "side": 1,
+      "message": "Not sure which %if clause to keep, but keep one and get rid of the other",
+      "parentUuid": "9aa7fdbe_c39f564f",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9aa7fdbe_e3ac5a8f",
         "filename": "rubygem-yajl-ruby.spec",
         "patchSetId": 1
@@ -47,6 +99,24 @@
       "writtenOn": "2017-05-31T10:08:08Z",
       "side": 1,
       "message": "Fails on:\n/usr/share/rubygems/rubygems/dependency.rb:296:in `to_specs\u0027: Could not find \u0027rspec-support\u0027 (~\u003e 3.4.0) - did find: [rspec-support-3.5.0] (Gem::LoadError)\n\tfrom /usr/share/rubygems/rubygems/specification.rb:1209:in `block in activate_dependencies\u0027\n\tfrom /usr/share/rubygems/rubygems/specification.rb:1198:in `each\u0027\n\tfrom /usr/share/rubygems/rubygems/specification.rb:1198:in `activate_dependencies\u0027\n\tfrom /usr/share/rubygems/rubygems/specification.rb:1180:in `activate\u0027\n\tfrom /usr/share/rubygems/rubygems/core_ext/kernel_gem.rb:48:in `gem\u0027\n\tfrom /usr/bin/rspec:22:in `\u003cmain\u003e\u0027\nerror: Bad exit status from /var/tmp/rpm-tmp.CxGEr3 (%check)",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_44528c14",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 326
+      },
+      "writtenOn": "2017-06-01T21:41:45Z",
+      "side": 1,
+      "message": "maybe the BuildRequires: rubygem(rspec) will help?",
+      "parentUuid": "9aa7fdbe_e3ac5a8f",
       "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
