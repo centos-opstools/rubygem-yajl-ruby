@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9aa7fdbe_ac14faf5",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 390
+      },
+      "writtenOn": "2017-06-09T16:21:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9aa7fdbe_238f4225",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9aa7fdbe_e43380f4",
         "filename": "rubygem-yajl-ruby.spec",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "9aa7fdbe_ccf85ec7",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 390
+      },
+      "writtenOn": "2017-06-09T16:21:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9aa7fdbe_e43380f4",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9aa7fdbe_043164ec",
         "filename": "rubygem-yajl-ruby.spec",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2017-06-01T21:41:45Z",
       "side": 1,
       "message": "get rid of the %if and %endif lines",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_ecf522cc",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 390
+      },
+      "writtenOn": "2017-06-09T16:21:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9aa7fdbe_043164ec",
       "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
@@ -88,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "9aa7fdbe_6c3132a2",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 390
+      },
+      "writtenOn": "2017-06-09T16:21:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9aa7fdbe_244d8873",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9aa7fdbe_e3ac5a8f",
         "filename": "rubygem-yajl-ruby.spec",
         "patchSetId": 1
@@ -117,6 +189,24 @@
       "side": 1,
       "message": "maybe the BuildRequires: rubygem(rspec) will help?",
       "parentUuid": "9aa7fdbe_e3ac5a8f",
+      "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_0c0346b9",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 390
+      },
+      "writtenOn": "2017-06-09T16:21:12Z",
+      "side": 1,
+      "message": "probably just a matter of repo not ready while testing, will check again in next jenkins run.",
+      "parentUuid": "9aa7fdbe_44528c14",
       "revId": "53d26b3a179ef70763f448415a1d4a3af0e79f05",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
