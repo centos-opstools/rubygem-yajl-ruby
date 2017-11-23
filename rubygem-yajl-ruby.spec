@@ -1,20 +1,33 @@
-# Generated from yajl-ruby-1.2.1.gem by gem2rpm -*- rpm-spec -*-
+# Generated from yajl-ruby-1.3.1.gem by gem2rpm -*- rpm-spec -*-
 %global gem_name yajl-ruby
+%global debug_package %{nil}
 
 Name: rubygem-%{gem_name}
-Version: 1.3.0
-Release: 3%{?dist}
+Version: 1.3.1
+Release: 1%{?dist}
 Summary: Ruby C bindings to the excellent Yajl JSON stream-based parser library
-Group: Development/Languages
 License: MIT
 URL: http://github.com/brianmario/yajl-ruby
 Source0: https://rubygems.org/gems/%{gem_name}-%{version}.gem
 BuildRequires: ruby(release)
 BuildRequires: rubygems-devel
 BuildRequires: ruby-devel >= 1.8.6
+%if 0%{?rhel} >= 7
 BuildRequires: rubygem(rspec)
+%else
+# Compiler is required for build of gem binary extension.
+# https://fedoraproject.org/wiki/Packaging:C_and_C++#BuildRequires_and_Requires
+BuildRequires: gcc
+BuildRequires: rubygem(rake-compiler) >= 0.7.5
+BuildRequires: rubygem(rspec) >= 3.0
+BuildRequires: rubygem(rspec) < 4
+BuildRequires: rubygem(activesupport)
+BuildRequires: rubygem(json)
+%endif
 
+%if 0%{?rhel} >= 7
 Provides: rubygem(%{gem_name}) = %{version}
+%endif
 
 %description
 %{summary}
@@ -22,7 +35,6 @@ Provides: rubygem(%{gem_name}) = %{version}
 
 %package doc
 Summary: Documentation for %{name}
-Group: Documentation
 Requires: %{name} = %{version}-%{release}
 BuildArch: noarch
 
@@ -51,7 +63,7 @@ cp -a .%{gem_dir}/* \
 
 
 mkdir -p %{buildroot}%{gem_extdir_mri}/lib/yajl
-cp -ar .%{gem_instdir}/lib/yajl/yajl.so %{buildroot}%{gem_extdir_mri}/lib/yajl
+cp -ar .%{gem_instdir}/ext/yajl/yajl.so %{buildroot}%{gem_extdir_mri}/lib/yajl
 
 # Prevent dangling symlink in -debuginfo (rhbz#878863).
 rm -rf %{buildroot}%{gem_instdir}/ext/
@@ -63,7 +75,7 @@ rm -f %{buildroot}%{gem_instdir}/{.gitignore,.travis.yml,.rspec}
 pushd .%{gem_instdir}
 # Disabled two failing tests
 sed -i '47,59d' spec/parsing/large_number_spec.rb
-rspec -Ilib -I%{buildroot}%{gem_extdir_mri} spec
+rspec -Ilib -I%{buildroot}%{gem_extdir_mri}/lib spec
 popd
 
 %files
@@ -89,6 +101,12 @@ popd
 %{gem_instdir}/%{gem_name}.gemspec
 
 %changelog
+* Thu Nov 23 2017 Sandro Bonazzola <sbonazzo@redhat.com> - 1.3.1-1
+- Rebase on upstream 1.3.1
+
+* Fri Nov 10 2017 Yaakov Selkowitz <yselkowi@redhat.com> - 1.3.0-4
+- Rebuilt for aarch64 and s390x
+
 * Fri Jun  9 2017 Sandro Bonazzola <sbonazzo@redhat.com> - 1.3.0-3
 - spec cleanup
 
