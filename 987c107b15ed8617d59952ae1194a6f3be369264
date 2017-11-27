@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_1cdd4515",
+        "filename": "rubygem-yajl-ruby.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 326
+      },
+      "writtenOn": "2017-11-27T18:39:29Z",
+      "side": 1,
+      "message": "If you just update the existing spec file directly, rather than generating an entirely new spec file using gem2rpm, does it work?",
+      "revId": "987c107b15ed8617d59952ae1194a6f3be369264",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
