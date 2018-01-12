@@ -2,8 +2,8 @@
 %global gem_name yajl-ruby
 
 Name: rubygem-%{gem_name}
-Version: 1.3.0
-Release: 3%{?dist}
+Version: 1.3.1
+Release: 1%{?dist}
 Summary: Ruby C bindings to the excellent Yajl JSON stream-based parser library
 Group: Development/Languages
 License: MIT
@@ -89,6 +89,12 @@ popd
 %{gem_instdir}/%{gem_name}.gemspec
 
 %changelog
+* Thu Dec 07 2017 Richard Megginson <rmeggins@redhat.com> - 1.3.1-1
+- update to 1.3.1
+
+* Fri Nov 10 2017 Yaakov Selkowitz <yselkowi@redhat.com> - 1.3.0-4
+- Rebuilt for aarch64 and s390x
+
 * Fri Jun  9 2017 Sandro Bonazzola <sbonazzo@redhat.com> - 1.3.0-3
 - spec cleanup
 
